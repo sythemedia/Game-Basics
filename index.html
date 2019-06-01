@@ -15,7 +15,9 @@
 
             var cube = new THREE.Mesh(new THREE.CubeGeometry(100,100,100), new THREE.MeshNormalMaterial());
             cube.rotation.z = 0;
-
+            
+            var material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
+            
             scene.add(cube);
 
             renderer.render(scene, camera);
